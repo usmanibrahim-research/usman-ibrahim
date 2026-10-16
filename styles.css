@@ -60,3 +60,14 @@
   font-size: 25px;
   cursor: pointer;
 }
+/* Full-width featured research, followed by news */
+#home .two-col {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 48px;
+}
+
+#home .two-col > div,
+#home .two-col > aside {
+  width: 100%;
+  min-width: 0;
+}
