@@ -10,8 +10,37 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="header"><div class="wrap"><div class="header-inner">
-  <a class="brand" href="#home"><span class="monogram" aria-hidden="true">UI</span>Usman Ibrahim</a>
+  <header class="header"><div class="wrap"><div class="header-inner">
+    <div class="brand">
+    <button
+      class="avatar-button"
+      type="button"
+      aria-label="Enlarge profile photo"
+      onclick="document.getElementById('photo-viewer').showModal()">
+      <img src="profile.jpg" alt="Usman Ibrahim">
+    </button>
+  
+    <a href="#home" style="color: inherit; text-decoration: none;">
+      Usman Ibrahim
+    </a>
+  </div>
+  
+  <dialog
+    id="photo-viewer"
+    class="photo-dialog"
+    aria-label="Profile photo"
+    onclick="if (event.target === this) this.close()">
+  
+    <button
+      class="photo-close"
+      type="button"
+      aria-label="Close photo"
+      onclick="document.getElementById('photo-viewer').close()">
+      ×
+    </button>
+  
+    <img src="profile.jpg" alt="Usman Ibrahim">
+  </dialog>
   <nav class="nav" aria-label="Main navigation">
     <a href="#home" aria-current="page">Home</a><a href="#publications">Publications</a><a href="#presentations">Presentations</a><a href="#news">News</a><a href="#about">About & links</a>
   </nav>
