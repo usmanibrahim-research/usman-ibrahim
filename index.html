@@ -177,6 +177,43 @@
         max-width: 250px;
       }
     }
+  /* Keep body text left-aligned */
+main,
+.hero,
+.prose,
+.card,
+.news-item,
+.empty,
+.footer-inner {
+  text-align: left;
+}
+
+/* Center headings and tabs only */
+h1,
+h2,
+h3,
+.eyebrow {
+  text-align: center;
+}
+
+.hero h1 {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  justify-content: center;
+}
+
+/* Left-align buttons, links, tags, and card labels */
+.actions,
+.links,
+.focus-strip,
+.card-top,
+.footer-inner {
+  justify-content: flex-start;
+}
   </style>
 </head>
 
