@@ -214,6 +214,63 @@ h3,
 .footer-inner {
   justify-content: flex-start;
 }
+/* Default: left-align all content, including paper titles */
+main,
+.hero,
+.prose,
+.card,
+.news-item,
+.empty,
+.detail,
+main h1,
+main h2,
+main h3,
+main .eyebrow,
+.research-highlights,
+.research-highlights li {
+  text-align: left;
+}
+
+/* Center only the main page and section headings */
+.hero > .eyebrow,
+.hero > h1,
+.hero > div > .eyebrow,
+.hero > div > h1,
+.page-head,
+.page-head .eyebrow,
+.page-head .page-title,
+.section-top,
+.section-top h2 {
+  text-align: center;
+}
+
+.hero h1 {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-top {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Keep navigation tabs centered */
+.nav {
+  justify-content: center;
+}
+
+/* Keep highlights readable */
+.research-highlights ul {
+  padding-left: 24px;
+  list-style-position: outside;
+}
+#home .hero .actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
   </style>
 </head>
 
